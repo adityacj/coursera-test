@@ -1,0 +1,195 @@
+h1
+{
+	text-align:center
+}
+
+div {
+	
+	background-color: #A9A9A9;
+	border: 1px solid black;
+  	width: 90%;
+  	margin-right: 25px;
+  	margin-left: auto;
+  	margin-bottom: 25px;
+  	font-family: Helvetica;
+  	color: black;
+  	box-sizing: border-box;
+	padding: 0;
+}
+
+
+
+@media (min-width: 992px)
+{
+
+	
+	div#container1
+	{
+		  		
+  		width: 32%;
+  		float: left;
+  	}
+	div#container2
+	{
+  		
+  		width: 32%;
+  		float: left;
+  	}
+  	div#container3
+	{
+  		
+  		width: 32%;
+  		float: left;
+  	}
+  	#p1 {
+  			background-color: #ff9999;
+  			position: relative;
+  			border: 1px solid black;
+  			margin-top: 0px;
+  			margin-left: 75%;
+  			text-align: center;
+
+
+	}
+
+	#p2 {
+  			background-color: #A52A2A;
+  			position: relative;
+  			border: 1px solid black;
+  			margin-top: 0px;
+  			margin-left: 75%;
+  			text-align: center;
+
+
+	}
+	#p3 {
+  			background-color: #ffcc66;
+  			position: relative;
+  			border: 1px solid black;
+  			margin-top: 0px;
+  			margin-left: 75%;
+  			text-align: center;
+
+	}
+  
+
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+
+	#p1 {
+  			background-color: #ff9999;
+  			position: relative;
+  			border: 1px solid black;
+  			margin-top: 0px;
+  			margin-left: 75%;
+  			text-align: center;
+
+
+	}
+
+	#p2 {
+  			background-color: #A52A2A;
+  			position: relative;
+  			border: 1px solid black;
+  			margin-top: 0px;
+  			margin-left: 75%;
+  			text-align: center;
+
+
+	}
+	#p3 {
+  			background-color: #ffcc66;
+  			position: relative;
+  			border: 1px solid black;
+  			margin-top: 0px;
+  			margin-left: 75%;
+  			text-align: center;
+
+	}
+	div#container1
+	{
+  		
+  		width: 45%;
+  		margin-left: 3%;
+  		float: left;
+  	}
+	div#container2
+	{
+  		
+  		width: 45%;
+  		float: left;
+  	}
+  	div#container3
+	{
+  		
+  		float: right;
+		width: 93%;
+		
+		margin-right: 4%;
+		
+  		
+  	}
+	
+
+}
+
+@media (max-width: 767px)
+{
+	#p1 {
+  			background-color: #ff9999;
+  			position: relative;
+  			border: 1px solid black;
+  			margin-top: 0px;
+  			margin-left: 75%;
+  			text-align: center;
+
+
+	}
+
+	#p2 {
+  			background-color: #A52A2A;
+  			position: relative;
+  			border: 1px solid black;
+  			margin-top: 0px;
+  			margin-left: 75%;
+  			text-align: center;
+
+
+	}
+	#p3 {
+  			background-color: #ffcc66;
+  			position: relative;
+  			border: 1px solid black;
+  			margin-top: 0px;
+  			margin-left: 75%;
+  			text-align: center;
+
+	}
+
+	div#container1
+	{
+  		
+  		width: 95%;
+  		margin-left: 2.5%;
+  		
+  		
+  	}
+	div#container2
+	{
+  		
+  		width: 95%;
+  		margin-left: 2.5%;
+  		
+  	}
+  	div#container3
+	{
+  		
+  		width: 95%;
+  		margin-left: 2.5%;
+  		
+  	}
+	
+}
