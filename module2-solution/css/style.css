@@ -3,12 +3,16 @@ h1
 	text-align:center
 }
 
+p
+{
+	border: 3px solid black;
+}
 div {
 	
 	background-color: #A9A9A9;
 	border: 3px solid black;
   	width: 90%;
-  	margin-right: 25px;
+  	margin-right: 10px;
   	margin-left: auto;
   	margin-bottom: 25px;
   	font-family: Helvetica;
@@ -50,6 +54,7 @@ div {
   			margin-top: 0px;
   			margin-left: 75%;
   			text-align: center;
+
 
 
 	}
@@ -128,9 +133,9 @@ div {
 	{
   		
   		float: right;
-		width: 93%;
+		width: 91.5%;
 		
-		margin-right: 4%;
+		margin-right: 5.5%;
 		
   		
   	}
