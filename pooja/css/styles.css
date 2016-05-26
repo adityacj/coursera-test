@@ -1,0 +1,62 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+
+#menu-tile, #specials-tile, #map-tile
+{
+  height: 300px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  margin-left: 16px;
+
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover
+{
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile
+{
+  background: url('../images/small.jpg') no-repeat;
+  background-position: center;
+  
+}
+
+#specials-tile
+{
+  background: url('../images/second.jpg') no-repeat;
+  background-position: center;
+  
+}
+
+#menu-tile span, #specials-tile span, #map-tile span
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.8;
+
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+  text-align: center;
+}
+
+
