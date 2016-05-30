@@ -16,6 +16,12 @@ body {
 .navbar-brand {
   padding-top: 25px;
 }
+
+.navbar-brand h1 { /* Restaurant name */
+	margin: 0px;
+	font-size: 2em;
+	color: #000000;
+}
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
   color: #29AFD6;
@@ -61,14 +67,11 @@ body {
 {
 	.navbar-brand h1 { /* Restaurant name */
     padding-top: 0px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
+    font-size: 1.5em; /* 1vw = 1% of viewport width */
     
   }
 
-  .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
-  }
+  
 }
 
 .col-xs-12
@@ -91,6 +94,6 @@ body {
 @media (max-width: 479px) {
   /* Header */
   .navbar-brand h1 { /* Restaurant name */
-    padding-top: 5px;
-    font-size: 6vw;
+    padding-top: 0px;
+    font-size: 1.5em;
   }
