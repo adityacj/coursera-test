@@ -193,7 +193,7 @@ var svg = d3.select("body")
      svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
             .attr("transform", "translate(-50,350)rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
-            .text("Temperature");
+            .text("Temperature(ºC)");
 
     svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
