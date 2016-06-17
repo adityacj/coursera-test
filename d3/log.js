@@ -100,21 +100,21 @@ var svg = d3.select("body")
         .attr("d", valueline1(data))
         .attr("id", "Line2")
         .style("opacity", 0)
-        .style("stroke", "#ff7f0e");
+        .style("stroke", "#aec7e8");
 
      svg.append("path")
         .attr("class", "line")
         .attr("d", valueline2(data))
         .attr("id", "Line3")
         .style("opacity", 0)
-        .style("stroke", "#2ca02c");
+        .style("stroke", "#ff7f0e");
 
      svg.append("path")
         .attr("class", "line")
         .attr("d", valueline3(data))
         .attr("id", "Line4")
         .style("opacity", 0)
-        .style("stroke", "#d62728");
+        .style("stroke", "#ffbb78");
 
 
      svg.append("path")
@@ -122,7 +122,7 @@ var svg = d3.select("body")
         .attr("d", valueline4(data))
         .attr("id", "Line5")
         .style("opacity", 0)
-        .style("stroke", "#9467bd");
+        .style("stroke", "#2ca02c");
 
 
      svg.append("path")
@@ -130,7 +130,7 @@ var svg = d3.select("body")
         .attr("d", valueline5(data))
         .attr("id", "Line6")
         .style("opacity", 0)
-        .style("stroke", "#8c564b");
+        .style("stroke", "#98df8a");
 
 
       svg.append("path")
@@ -138,21 +138,21 @@ var svg = d3.select("body")
         .attr("d", valueline6(data))
         .attr("id", "Line7")
         .style("opacity", 0)
-        .style("stroke", "#e377c2");
+        .style("stroke", "#d62728");
 
       svg.append("path")
         .attr("class", "line")
         .attr("d", valueline7(data))
         .attr("id", "Line8")
         .style("opacity", 0)
-        .style("stroke", "#7f7f7f");
+        .style("stroke", "#ff9896");
 
       svg.append("path")
         .attr("class", "line")
         .attr("d", valueline8(data))
         .attr("id", "Line9")
         .style("opacity", 0)
-        .style("stroke", "#bcbd22");
+        .style("stroke", "#9467bd");
 
 
       svg.append("path")
@@ -160,7 +160,7 @@ var svg = d3.select("body")
         .attr("d", valueline9(data))
         .attr("id", "Line10")
         .style("opacity", 0)
-        .style("stroke", "#17becf");
+        .style("stroke", "#c5b0d5");
 
 
       svg.append("path")
@@ -168,14 +168,14 @@ var svg = d3.select("body")
         .attr("d", valueline10(data))
         .attr("id", "Line11")
         .style("opacity", 0)
-        .style("stroke", "#1f77b4");
+        .style("stroke", "#8c564b");
 
       svg.append("path")
         .attr("class", "line")
         .attr("d", valueline11(data))
         .attr("id", "Line12")
         .style("opacity", 0)
-        .style("stroke", "#F5B041");
+        .style("stroke", "#c49c94");
 
        
 
@@ -208,7 +208,7 @@ var svg = d3.select("body")
 		//d.Year = +d.Year;
     });
     var dataNest = d3.nest().key(function(d) {return d.Year;}).entries(data);
-    var color = d3.scale.category10();   // set the colour scale
+    var color = d3.scale.category20();   // set the colour scale
     legendSpace = width/dataNest.length; // spacing for legend
     //console.log(legendSpace);
     // Loop through each symbol / key
@@ -221,9 +221,9 @@ var svg = d3.select("body")
             .attr("y", 50 )
             .attr("class", "legend")    // style the legend
             .style("fill", function() { 
-            console.log((d.key));// dynamic colours
-            if(d.key==="Dec")
-                	return d.color = "#F5B041";
+            //console.log((d.key));// dynamic colours
+            //console.log(color(d.key));
+         
                 return d.color = color(d.key);
                 
                  })
