@@ -175,7 +175,7 @@ var svg = d3.select("body")
         .attr("d", valueline11(data))
         .attr("id", "Line12")
         .style("opacity", 0)
-        .style("stroke", "#ff7f0e");
+        .style("stroke", "#F5B041");
 
        
 
@@ -221,8 +221,11 @@ var svg = d3.select("body")
             .attr("y", 50 )
             .attr("class", "legend")    // style the legend
             .style("fill", function() { 
-            //console.log(color(d.key));// dynamic colours
+            console.log((d.key));// dynamic colours
+            if(d.key==="Dec")
+                	return d.color = "#F5B041";
                 return d.color = color(d.key);
+                
                  })
             .on("click", function(){
             	
