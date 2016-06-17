@@ -193,12 +193,14 @@ var svg = d3.select("body")
      svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
             .attr("transform", "translate(-50,350)rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
-            .text("Temperature - deviations from the corresponding 1951-1980 means(ºC)");
+            .text("Temperature - deviations from the corresponding 1951-1980 means(ºC)")
+            .style("font-size", 15);
 
     svg.append("text")
             .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
             .attr("transform", "translate(900,750)")  // centre below axis
-            .text("Year");
+            .text("Year")
+            .style("font-size", 15);
   
 });
 
@@ -234,9 +236,10 @@ var svg = d3.select("body")
             		
             		var active   = Line1.active ? false : true,
 		  			newOpacity = active ? 1 : 0;
-		  			console.log("active"+active);
+		  			//console.log("active"+active);
 		  			d3.select("#Line1").style("opacity", newOpacity);
 		  			Line1.active = active;
+
             	}
 
             	else if (d.key==="Feb")
@@ -318,21 +321,9 @@ var svg = d3.select("body")
             	}
             
 
-            	/*console.log(Line);
-		// Determine if current line is visible
-				var active   = Line1.active ? false : true,
-		  		newOpacity = active ? 1 : 0;
-		  		console.log(newOpacity);
-		// Hide or show the elements
-				d3.select("#Line1").style("opacity", newOpacity);
-				
-		// Update whether or not the elements are active
-				Line1.active = active;*/
-	})
+            	})
             .text(d.key);
-            //console.log(d.key);
 
-              
             
 
     });
