@@ -11,53 +11,65 @@ var xAxis = d3.svg.axis().scale(x).orient("bottom").ticks(30);
 var yAxis = d3.svg.axis().scale(y).orient("left").ticks(5);
 
 var valueline = d3.svg.line()
+    .interpolate("basis")
     .x(function(d) { return x(d.Year); })
     .y(function(d) { return y(d.Jan); });
 
 var valueline1 = d3.svg.line()
+    .interpolate("basis")
     .x(function(d) { return x(d.Year); })
     .y(function(d) { return y(d.Feb); });
 
  var valueline2 = d3.svg.line()
+    .interpolate("basis")
     .x(function(d) { return x(d.Year); })
     .y(function(d) { return y(d.Mar); });
 
  var valueline3 = d3.svg.line()
+    .interpolate("basis")
     .x(function(d) { return x(d.Year); })
     .y(function(d) { return y(d.Apr); });
 
   var valueline4 = d3.svg.line()
+    .interpolate("basis")
     .x(function(d) { return x(d.Year); })
     .y(function(d) { return y(d.May); });
 
 
   var valueline5 = d3.svg.line()
+    .interpolate("basis")
     .x(function(d) { return x(d.Year); })
     .y(function(d) { return y(d.Jun); });
 
 
   var valueline6 = d3.svg.line()
+    .interpolate("basis")
     .x(function(d) { return x(d.Year); })
     .y(function(d) { return y(d.Jul); });
 
   var valueline7 = d3.svg.line()
+    .interpolate("basis")
     .x(function(d) { return x(d.Year); })
     .y(function(d) { return y(d.Aug); });
 
 
   var valueline8 = d3.svg.line()
+    .interpolate("basis")
     .x(function(d) { return x(d.Year); })
     .y(function(d) { return y(d.Sep); });
 
   var valueline9 = d3.svg.line()
+    .interpolate("basis")
     .x(function(d) { return x(d.Year); })
     .y(function(d) { return y(d.Oct); });
 
   var valueline10 = d3.svg.line()
+    .interpolate("basis")
     .x(function(d) { return x(d.Year); })
     .y(function(d) { return y(d.Nov); });
 
   var valueline11 = d3.svg.line()
+    .interpolate("basis")
     .x(function(d) { return x(d.Year); })
     .y(function(d) { return y(d.Dec); });
 
